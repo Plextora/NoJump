@@ -4,6 +4,9 @@ namespace NoJump
 {
     internal class Program
     {
+
+        static Mem memoryManager = new Mem();
+
         static void Main(string[] args)
         {
             bool enabled = false;
