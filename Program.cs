@@ -9,6 +9,10 @@ namespace NoJump
 
         static void Main(string[] args)
         {
+            bool enabled = false;
+            bool invalidKey = false;
+            ConsoleKeyInfo cki = new ConsoleKeyInfo();
+            Console.ForegroundColor = ConsoleColor.Gray;
             memoryManager.OpenProcess("Minecraft.Windows");
 
 
@@ -21,11 +25,6 @@ namespace NoJump
             {
                 memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "3");
             }
-
-            bool enabled = false;
-            bool invalidKey = false;
-            ConsoleKeyInfo cki = new ConsoleKeyInfo();
-            Console.ForegroundColor = ConsoleColor.Gray;
 
             Console.WriteLine("Z key = ENABLE");
             Console.WriteLine("X key = DISABLE");
