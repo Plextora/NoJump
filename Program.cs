@@ -1,4 +1,6 @@
-﻿namespace NoJump
+﻿using Memory;
+
+namespace NoJump
 {
     internal class Program
     {
