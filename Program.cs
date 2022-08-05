@@ -18,7 +18,7 @@ namespace NoJump
 
             void ActivateNoJump()
             {
-                memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "-18");
+                memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "-1000");
             }
 
             void DisableNoJump()
