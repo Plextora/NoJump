@@ -10,6 +10,10 @@ This mod isn't exclusive to jumping, any fall will kill you. This includes very 
 
 https://user-images.githubusercontent.com/71889427/182978283-de36928f-25c0-421b-8504-f7fa6f064662.mp4
 
+## Does this work on servers?
+
+No. This does not work on any popular servers that I've tested (The Hive, Cubecraft, and Galaxite)
+
 ## Why make this?
 
 I was making a NoFall cheat and thought "What if I make the complete opposite thing?". Other than that, I didn't have any reason to make this.
