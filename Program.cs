@@ -9,6 +9,19 @@ namespace NoJump
 
         static void Main(string[] args)
         {
+            memoryManager.OpenProcess("Minecraft.Windows");
+
+
+            void ActivateNoJump()
+            {
+                memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "-18");
+            }
+
+            void DisableNoJump()
+            {
+                memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "3");
+            }
+
             bool enabled = false;
             bool invalidKey = false;
             ConsoleKeyInfo cki = new ConsoleKeyInfo();
@@ -29,12 +42,14 @@ namespace NoJump
                 cki = Console.ReadKey(true);
                 if (cki.Key == ConsoleKey.Z)
                 {
+                    ActivateNoJump();
                     invalidKey = false;
                     enabled = true;
                     Console.ForegroundColor = ConsoleColor.Green;
                 }
                 else if (cki.Key == ConsoleKey.X)
                 {
+                    DisableNoJump();
                     invalidKey = false;
                     enabled = false;
                     Console.ForegroundColor = ConsoleColor.Red;
