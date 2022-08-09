@@ -18,12 +18,12 @@ namespace NoJump
 
             void ActivateNoJump()
             {
-                memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "-1000");
+                memoryManager.WriteMemory("Minecraft.Windows.exe+3A22638", "float", "-1000");
             }
 
             void DisableNoJump()
             {
-                memoryManager.WriteMemory("Minecraft.Windows.exe+3A224B0", "float", "3");
+                memoryManager.WriteMemory("Minecraft.Windows.exe+3A22638", "float", "3");
             }
 
             Console.WriteLine("Z key = ENABLE");
