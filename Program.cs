@@ -70,6 +70,7 @@ namespace NoJump
                 }
             } while (cki.Key != ConsoleKey.Escape);
 
+            DisableNoJump();
             memoryManager.CloseProcess();
         }
     }
