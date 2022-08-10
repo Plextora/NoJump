@@ -4,7 +4,7 @@ The Minecraft: Bedrock Edition mod that kills you if you jump
 
 ## How does this work?
 
-All this does is change a memory addresses value (`Minecraft.Windows.exe+3A224B0`) to `-1000`
+All this does is change a memory addresses value (`Minecraft.Windows.exe+3BBADA8`) to `-1000`
 
 This mod isn't exclusive to jumping, any fall will kill you. This includes very minor stuff like this:
 
